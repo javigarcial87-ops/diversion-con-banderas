@@ -1,7 +1,9 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
 }
-
+ body{
+  background-image: url('https://www.astroshop.es/Produktbilder/zoom/4217_1/National-Geographic-Mapamundi-Mapa-del-Mundo-fisico-grande.jpg');
+ }
 
 .modal-overlay {
   position: fixed;
@@ -19,9 +21,9 @@
 .modal {
   position: relative; 
   background: white;
-  padding: 20px;
+  padding: 2px;
   border-radius: 10px;
-  max-width: 400px;
+  
   text-align: center;
 }
 
@@ -38,10 +40,9 @@
 
 
   .card img {
-  width: 100%;           
-  height: 100px;         
-  object-fit: cover;     
-  border-radius: 4px;
+  width: 100%; 
+  height: 100%;
+  border-radius: 40px;
   cursor:pointer;
 }
   
@@ -49,13 +50,21 @@
 
 .card {
   display: inline-block;
+  flex-wrap: wrap;
   margin: 10px;
   padding: 20px;
   text-align: center;
   cursor: pointer;
   background-color: bisque;
+  transition: all linear;
 }
 .card h3{
-  
+font-size: 16pt; 
 text-transform: uppercase;
+}
+
+
+.card:hover{
+  transform: scale(1.15);
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
 }
