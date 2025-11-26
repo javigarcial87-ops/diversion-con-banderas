@@ -48,7 +48,7 @@ function openModal(pais) {
     overlay.classList.add('modal-overlay')
 
     const modal = document.createElement('div')
-    modal.classList.add('modal')
+    modal.classList.add('modal') 
 
     const closeBtn = document.createElement('button')
     closeBtn.textContent = '❌'
